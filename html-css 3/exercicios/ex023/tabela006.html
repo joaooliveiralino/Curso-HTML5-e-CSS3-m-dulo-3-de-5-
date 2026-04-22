@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 1000px; /* Tabela propositalmente larga */ }
+        th, td { border: 1px solid black; padding: 10px; }
+        
+        /* O segredo da responsividade */
+        div.container-tabela {
+            overflow-x: auto; /* Cria rolagem lateral apenas se necessário */
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Tabela Responsiva</h1>
+    <p>Este texto não vai rolar para o lado, apenas a tabela abaixo!</p>
+
+    <div class="container-tabela">
+        <table>
+            <caption>Vendas por Mês</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 55'</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>08</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>18</td>
+                    <td>25</td>
+                    <td>30</td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+
+    <p>O conteúdo continua fixo aqui embaixo.</p>
+</body>
+</html>

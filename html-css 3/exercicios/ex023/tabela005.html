@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agrupando Colunas com colgroup</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        /* Classes para as colunas */
+        .destaque-nome { background-color: lightgreen; }
+        .destaque-genero { background-color: yellow; }
+        .outros { background-color: lightcoral; }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Cadastro de Clientes</caption>
+        
+        <colgroup>
+            <col class="destaque-nome"> <col class="destaque-genero"> <col span="2" class="outros"> </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
